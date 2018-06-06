@@ -1,23 +1,15 @@
 package com.rest.client.config;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rest.client.config.resource.NaiveHostnameVerifier;
 import com.rest.client.config.resource.NaiveSSLSocketFactory;
 import com.rest.client.feign.RestApiBasic;
 import feign.Client;
 import feign.Logger;
-import feign.codec.Decoder;
-import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
-import org.springframework.boot.autoconfigure.web.HttpMessageConverters;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.feign.FeignAutoConfiguration;
-import org.springframework.cloud.netflix.feign.support.ResponseEntityDecoder;
-import org.springframework.cloud.netflix.feign.support.SpringDecoder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.converter.HttpMessageConverter;
-import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
